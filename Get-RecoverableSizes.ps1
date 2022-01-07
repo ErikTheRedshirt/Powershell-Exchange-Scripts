@@ -1,0 +1,1 @@
+﻿Get-Mailbox -ResultSize Unlimited -Filter "LitigationHoldEnabled -eq `$true" | Get-MailboxFolderStatistics -FolderScope RecoverableItems | Format-Table Identity,FolderSize #| Export-Csv .\RecoverablesSizes.csv

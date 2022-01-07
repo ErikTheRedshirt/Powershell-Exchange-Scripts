@@ -1,0 +1,2 @@
+﻿$SearchName = Read-Host "Enter the name of the Complance Search"
+For($i=1;$i -lt 1000;$i++){do{New-ComplianceSearchAction -SearchName $SearchName -Purge -PurgeType HardDelete -Confirm:$false -Force;Sleep -seconds 15}While($i -ge 1000)}

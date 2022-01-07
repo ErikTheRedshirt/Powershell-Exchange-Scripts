@@ -1,0 +1,2 @@
+﻿$username = Read-Host "Enter the username of the user"
+For($i=1;$i -lt 1000;$i++){do{Get-MailboxFolderStatistics $username -FolderScope RecoverableItems | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders -Force;Sleep -seconds 15}While($i -ge 1000)}
