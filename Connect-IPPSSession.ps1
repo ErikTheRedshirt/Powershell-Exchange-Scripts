@@ -1,3 +1,3 @@
-﻿Connect-IPPSSession -Credential eroberts@cytomx.com
+﻿Connect-IPPSSession -Credential 
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline
